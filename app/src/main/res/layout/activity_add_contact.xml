@@ -9,13 +9,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name">
+        android:hint="Name"
+        android:id="@+id/contactName">
     </EditText>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Number">
+        android:hint="Number"
+        android:id="@+id/contactNumber">
 
     </EditText>
 
@@ -25,7 +27,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="addToList"/>
+            android:text="Add"
+            android:onClick="addToList"/>
 
         <Button
             android:layout_width="wrap_content"
