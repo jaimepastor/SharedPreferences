@@ -57,10 +57,12 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         for (String x: listOfContacts){
-            concatenatedString.concat(x);
-            concatenatedString.concat("!");
+            concatenatedString = concatenatedString.concat(x);
+            concatenatedString = concatenatedString.concat("!");
         }
 
+        System.out.println("HELLO \n\n\n");
+        System.out.println(concatenatedString);
         editor.putString("CONTACTS", concatenatedString);
         editor.commit();
     }
